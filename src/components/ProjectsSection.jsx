@@ -9,6 +9,7 @@ const projects = [
         tags: ["React", "TailwindCSS", "MongoDB","Node/Expressjs"],
         demoUrl: "https://blogingme.netlify.app/",
         githubUrl: "https://github.com/Karthi028/BlogingPage",
+        githubUr2: "https://github.com/Karthi028/BlogingBackend",
     },
     {
         id: 2,
@@ -89,6 +90,13 @@ export const ProjectsSection = () => {
                                         >
                                             <Github size={20} />
                                         </a>
+                                        {project.githubUr2 && <a
+                                            href={project.githubUr2}
+                                            target="_blank"
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                        >
+                                            <Github size={20} />
+                                        </a>}
                                     </div>
                                 </div>
                             </div>

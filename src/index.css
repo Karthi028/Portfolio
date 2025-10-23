@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+    --toastify-color-progress-success: #8b5cf6;
+}
+
 @theme {
     --color-border: hsl(var(--border));
     --color-background: hsl(var(--background));
@@ -201,4 +205,18 @@
     margin: 0 auto;
     padding: 0;
     text-align: center;
+}
+
+.toast-container-mobile {
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .toast-container-mobile {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        top: auto;
+    }
 }
