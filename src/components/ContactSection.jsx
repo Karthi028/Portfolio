@@ -10,7 +10,7 @@ import {
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const API_ENDPOINT = "http://localhost:3001/api/data";
+const API_ENDPOINT = "https://portfoliodb-928r.onrender.com/api/data";
 
 export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
