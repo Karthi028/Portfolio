@@ -220,3 +220,27 @@
         top: auto;
     }
 }
+
+.cosmic-buttonn {
+    background-image: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cosmic-buttonn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
+
+.cosmic-buttonn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-image: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+}
+
+.backgrounds{
+    background-image: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+}

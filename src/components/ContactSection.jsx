@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import axios from "axios";
 import {
   Linkedin,
   Mail,
@@ -9,18 +10,34 @@ import {
 import { useState } from "react";
 import { toast } from "react-toastify";
 
+const API_ENDPOINT = "http://localhost:3001/api/data";
+
 export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast.success("Thank you for your message. I'll get back to you soon.");
+    const form = e.target;
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await axios.post(API_ENDPOINT, data);
+
+      if (response.status >= 200 && response.status < 300) {
+        toast.success("Thank you for your message. I'll get back to you soon.");
+        form.reset();
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error.response || error.message);
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
+
   };
 
   return (
@@ -83,9 +100,11 @@ export const ContactSection = () => {
                 </div>
               </div>
             </div>
+            <hr />
 
-            <div className="pt-4 flex gap-5 justify-center items-center">
-              <h4 className="font-medium"> Connect With Me</h4>
+
+            <div className="flex gap-5 justify-center items-center">
+              <h4 className="text-2xl font-bold"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="https://www.linkedin.com/in/karthi-j-a3b9a4364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-violet-500 text-glow border border-white px-1.5 py-2 rounded-xl animate-bounce">
                   <Linkedin />
@@ -95,11 +114,10 @@ export const ContactSection = () => {
           </div>
           <div
             className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
           >
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -157,7 +175,7 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-buttonn w-full flex items-center justify-center gap-2"
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}

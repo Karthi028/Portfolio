@@ -38,7 +38,7 @@ export const Navbar = () => {
                 >
                     <span className="relative z-10 font-bold">
                         <span className="text-glow text-foreground"> Karthi </span>{" "}
-                        Portfolio
+                        <span className="text-transparent bg-clip-text bg-gradient-to-tr from-indigo-500 to-purple-400">Portfolio</span>
                     </span>
                 </a>
 

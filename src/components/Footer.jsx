@@ -2,7 +2,7 @@ import { ArrowUp } from "lucide-react";
 
 export const Footer = () => {
     return (
-        <footer className="py-2 px-4 bg-violet-400 relative mt-4 pt-1 flex flex-wrap justify-between items-center">
+        <footer className="backgrounds py-2 px-4  relative mt-4 pt-1 flex flex-wrap justify-between items-center">
             {" "}
             <p className="text-sm text-muted-foreground">
                 {" "}

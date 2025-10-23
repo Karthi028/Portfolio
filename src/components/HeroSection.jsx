@@ -31,7 +31,7 @@ export const HeroSection = () => {
                     <div className="space-y-6">
                         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight md:text-start">
                             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-                            <span className="text-primary opacity-0 animate-fade-in-delay-1">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-indigo-500 to-purple-500 font-bold opacity-0 animate-fade-in-delay-1">
                                 {" "}
                                 Karthi
                             </span>
