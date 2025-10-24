@@ -15,13 +15,15 @@ export const AboutSection = () => {
                             Full-Stack Developer (MERN Certified) & End-to-End Developer
                         </h3>
 
-                        <p className="text-start sm:text-center">
+                        <div>
+                            <p className="text-start sm:text-center leading-relaxed">
                             I am a <strong className="font-bold">MERN-Full-Stack Developer</strong> equipped with comprehensive training from <strong className="font-bold">GUVI (an IIT-M & IIM-A incubated venture)</strong>, specializing in the complete application lifecycle. My focus is on delivering <strong className="font-bold">modern, production-ready</strong> web solutions that are <strong className="font-bold">high-performing, responsive</strong>, and <strong className="font-bold">user-friendly</strong>.
                         </p>
 
-                        <p className="text-start sm:text-center">
+                        <p className="text-start sm:text-center leading-relaxed">
                             I thrive on the challenge of developing clean, <strong className="font-bold">scalable code</strong> for both backend logic and dynamic React interfaces. I am committed to <strong className="font-bold">continuous skill refinement</strong>, always seeking out new technologies and techniques to build <strong className="font-bold">effective and elegant solutions</strong>.
                         </p>
+                        </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="#contact" className="cosmic-button">
@@ -47,7 +49,7 @@ export const AboutSection = () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg"> Web Development</h4>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-muted-foreground leading-normal">
                                         Creating responsive websites and web applications with
                                         modern frameworks.
                                     </p>
@@ -61,7 +63,7 @@ export const AboutSection = () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Full-Stack Development</h4>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-muted-foreground leading-normal">
                                         Architecting scalable APIs with Node.js/Express and managing robust
                                         data persistence with MongoDB.
                                     </p>
@@ -76,7 +78,7 @@ export const AboutSection = () => {
 
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">End-to-End Application</h4>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-muted-foreground leading-normal">
                                         Managing the entire application lifecycle, from conceptual
                                         design to version control and live deployment.
                                     </p>

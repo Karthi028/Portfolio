@@ -4,9 +4,10 @@ const projects = [
     {
         id: 1,
         title: "Blogging App",
-        description: "A full-stack, MERN-based blogging platform featuring secure authentication, a rich text editor, and real-time user analytics.",
+        description:
+            "A full-stack, MERN-based blogging platform featuring secure authentication, a rich text editor, and real-time user analytics.",
         image: "/Blogg.png",
-        tags: ["React","TailwindCSS","MongoDB","Node/Expressjs"],
+        tags: ["React", "TailwindCSS", "MongoDB", "Node/Express.js"],
         demoUrl: "https://blogingme.netlify.app/",
         githubUrl: "https://github.com/Karthi028/BlogingPage",
         githubUr2: "https://github.com/Karthi028/BlogingBackend",
@@ -17,7 +18,7 @@ const projects = [
         description:
             "Real-time, full-stack MERN chat application utilizing Socket.io to deliver instant text and image messaging with dynamic user status.",
         image: "/Chatapp.png",
-        tags: ["React","JavaScript","MongoDB","Node/Expressjs","Socketio"],
+        tags: ["React", "JavaScript", "MongoDB", "Node/Express.js", "Socket.io"],
         demoUrl: "https://chatapp-tx20.onrender.com/",
         githubUrl: "https://github.com/Karthi028/ChatApp",
     },
@@ -27,7 +28,7 @@ const projects = [
         description:
             "Full-stack job portal engineered with React and Supabase, featuring secure role-based authentication.",
         image: "/JobPortal.png",
-        tags: ["React","TailwindCSS","Node/Expressjs","Supabase","Clerk","Shadcn"],
+        tags: ["React", "TailwindCSS", "Node/Express.js", "Supabase", "Clerk", "Shadcn"],
         demoUrl: "https://jobshired.netlify.app/",
         githubUrl: "https://github.com/Karthi028/JobPortal",
     },
@@ -63,7 +64,7 @@ export const ProjectsSection = () => {
 
                             <div className="p-6 flex flex-col justify-between h-65">
                                 <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.tags.map((tag,index) => (
+                                    {project.tags.map((tag, index) => (
                                         <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                                             {tag}
                                         </span>
@@ -71,7 +72,7 @@ export const ProjectsSection = () => {
                                 </div>
 
                                 <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                                <p className="text-muted-foreground text-sm mb-4">
+                                <p className="text-muted-foreground text-sm mb-4 leading-normal">
                                     {project.description}
                                 </p>
                                 <div className="flex justify-between items-center">
