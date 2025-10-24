@@ -52,7 +52,7 @@ export const ProjectsSection = () => {
                     {projects.map((project, key) => (
                         <div
                             key={key}
-                            className="group bg-card rounded-lg overflow-hidden shadow-lg card-hover"
+                            className="group bg-card rounded-lg overflow-hidden shadow-lg card-hover flex flex-col h-full" 
                         >
                             <div className="h-48 overflow-hidden">
                                 <img
@@ -62,20 +62,22 @@ export const ProjectsSection = () => {
                                 />
                             </div>
 
-                            <div className="p-6 flex flex-col justify-between h-65">
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.tags.map((tag, index) => (
-                                        <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
+                            <div className="p-6 flex flex-col grow justify-between">
+                                <div> 
+                                    <div className="flex flex-wrap gap-2 mb-4">
+                                        {project.tags.map((tag, index) => (
+                                            <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
 
-                                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                                <p className="text-muted-foreground text-sm mb-4 leading-normal">
-                                    {project.description}
-                                </p>
-                                <div className="flex justify-between items-center">
+                                    <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                                    <p className="text-muted-foreground text-sm mb-4 leading-normal">
+                                        {project.description}
+                                    </p>
+                                </div>
+                                <div className="flex justify-between items-center"> 
                                     <div className="flex space-x-3">
                                         <a
                                             href={project.demoUrl}
