@@ -25,7 +25,7 @@ const projects = [
         id: 3,
         title: "JobPortal",
         description:
-            "Full-stack job portal engineered with React and Supabase, featuring secure role-based authentication",
+            "Full-stack job portal engineered with React and Supabase, featuring secure role-based authentication.",
         image: "/JobPortal.png",
         tags: ["React","TailwindCSS","Node/Expressjs","Supabase","Clerk","Shadcn"],
         demoUrl: "https://jobshired.netlify.app/",
