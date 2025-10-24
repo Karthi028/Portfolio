@@ -31,6 +31,8 @@ export const ContactSection = () => {
       if (response.status >= 200 && response.status < 300) {
         toast.success("Thank you for your message. I'll get back to you soon.");
         form.reset();
+      } else {
+        toast.error("Message failed to send. Please try again later.");
       }
     } catch (error) {
       console.error("Error submitting form:", error.response || error.message);
@@ -55,14 +57,14 @@ export const ContactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-2 flex flex-col justify-between">
             <h3 className="text-2xl font-semibold mb-6 p-1 rounded-xl bg-violet-500">
-              {" "}
               Contact Information
             </h3>
 
             <div className="space-y-10 justify-center items-center">
+              {/* Email */}
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10 ">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-medium text-start"> Email</h4>
@@ -74,35 +76,37 @@ export const ContactSection = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Phone Number (Unmasked - FIXED) */}
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10 animate-shake">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-medium text-start"> Phone</h4>
                   <a
-                    href="tel:+9894461539"
+                    href="tel:+919894461539"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +91 98XXXXXX39
+                    +91 9894461539
                   </a>
                 </div>
               </div>
+
+              {/* Location (Spelling - FIXED) */}
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-medium text-start"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Chennai, TamilNadu
+                    Chennai, Tamil Nadu
                   </a>
                 </div>
               </div>
             </div>
             <hr />
-
-
             <div className="flex gap-5 justify-center items-center">
               <h4 className="text-2xl font-bold"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
@@ -123,7 +127,6 @@ export const ContactSection = () => {
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Name
                 </label>
                 <input
@@ -131,7 +134,7 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="Name..."
                 />
               </div>
@@ -141,7 +144,6 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Email
                 </label>
                 <input
@@ -149,7 +151,7 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="Your Email..."
                 />
               </div>
@@ -166,7 +168,7 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>

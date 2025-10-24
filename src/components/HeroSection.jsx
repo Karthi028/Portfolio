@@ -40,7 +40,7 @@ export const HeroSection = () => {
                             </span>
                         </h1>
                         <p className="text-md sm:text-lg md:text-xl max-2-2xl md:text-start opacity-0 animate-fade-in-delay-3">
-                            A motivated MERN Full-Stack Developer ready to build the modern web. I'm fully equipped to architect,
+                            A motivated MERN-Full-Stack Developer ready to build the modern web. I'm fully equipped to architect,
                             develop, and deploy end-to-end applications.
                         </p>
 

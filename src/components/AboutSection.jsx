@@ -3,7 +3,7 @@ import { Briefcase, Code, User } from "lucide-react";
 export const AboutSection = () => {
     return (
         <section id="about" className="py-15 px-4 relative">
-            {" "}
+
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     About <span className="text-primary"> Me</span>
@@ -12,11 +12,11 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold text-start sm:text-center">
-                            Full-Stack Developer (MERN Certified) & End-to-End Creator
+                            Full-Stack Developer (MERN Certified) & End-to-End Developer
                         </h3>
 
                         <p className="text-start sm:text-center">
-                            I am a <strong className="font-bold">MERN Full-Stack Developer</strong> equipped with comprehensive training from <strong className="font-bold">GUVI (an IIT-M & IIM-A incubated venture)</strong>, specializing in the entire application lifecycle. My focus is on delivering <strong className="font-bold">modern, production-ready</strong> web solutions that are <strong className="font-bold">high-performing, responsive</strong>, and <strong className="font-bold">user-friendly</strong>.
+                            I am a <strong className="font-bold">MERN-Full-Stack Developer</strong> equipped with comprehensive training from <strong className="font-bold">GUVI (an IIT-M & IIM-A incubated venture)</strong>, specializing in the complete application lifecycle. My focus is on delivering <strong className="font-bold">modern, production-ready</strong> web solutions that are <strong className="font-bold">high-performing, responsive</strong>, and <strong className="font-bold">user-friendly</strong>.
                         </p>
 
                         <p className="text-start sm:text-center">
@@ -25,7 +25,6 @@ export const AboutSection = () => {
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="#contact" className="cosmic-button">
-                                {" "}
                                 Get In Touch
                             </a>
 

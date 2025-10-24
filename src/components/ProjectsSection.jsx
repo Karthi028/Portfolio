@@ -6,7 +6,7 @@ const projects = [
         title: "Blogging App",
         description: "A full-stack, MERN-based blogging platform featuring secure authentication, a rich text editor, and real-time user analytics.",
         image: "/Blogg.png",
-        tags: ["React", "TailwindCSS", "MongoDB","Node/Expressjs"],
+        tags: ["React","TailwindCSS","MongoDB","Node/Expressjs"],
         demoUrl: "https://blogingme.netlify.app/",
         githubUrl: "https://github.com/Karthi028/BlogingPage",
         githubUr2: "https://github.com/Karthi028/BlogingBackend",
@@ -17,7 +17,7 @@ const projects = [
         description:
             "Real-time, full-stack MERN chat application utilizing Socket.io to deliver instant text and image messaging with dynamic user status.",
         image: "/Chatapp.png",
-        tags: ["JavaScript", "MondoDB", "React","Node/Expressjs","Socketio"],
+        tags: ["React","JavaScript","MongoDB","Node/Expressjs","Socketio"],
         demoUrl: "https://chatapp-tx20.onrender.com/",
         githubUrl: "https://github.com/Karthi028/ChatApp",
     },
@@ -27,7 +27,7 @@ const projects = [
         description:
             "Full-stack job portal engineered with React and Supabase, featuring secure role-based authentication",
         image: "/JobPortal.png",
-        tags: ["React", "Node/Expressjs", "supabase","clerk","Tailwind","shadcn"],
+        tags: ["React","TailwindCSS","Node/Expressjs","Supabase","Clerk","Shadcn"],
         demoUrl: "https://jobshired.netlify.app/",
         githubUrl: "https://github.com/Karthi028/JobPortal",
     },
